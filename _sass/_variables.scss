@@ -1,0 +1,33 @@
+// Font Styles
+$DEFAULT_FONT_FAMILY: 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace;
+
+// Sizes
+$ROOT_SIZE: 16px;
+
+// Colors
+
+// Solarized Theme
+$base03:    #002b36;
+$base02:    #073642;
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+
+$DEFAULT_FOREGROUND: $base3;
+$DEFAULT_BACKGROUND: $base03;
+$CONTAINER_BORDER_COLOR: $base00;
+$PRIMARY_COLOR: $orange;
+$SECONDARY_COLOR: $blue;
+$TERTIARY_COLOR: $green;
+$LINK_COLOR: $cyan;

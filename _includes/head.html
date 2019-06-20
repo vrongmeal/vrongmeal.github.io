@@ -1,0 +1,30 @@
+<head>
+    <title>{% if page.title %}{{ page.title }} - vrongmeal{% else %}{{ site.title }} - {{ site.description }}{% endif %}
+    </title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{{ site.description }}">
+
+    <link rel="stylesheet" href="{{ '/static/styles/main.css' | prepend: site.baseurl | replace: '//', '/' }}">
+    <link rel="shortcut icon" href="/static/assets/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" title="Vaibhav"
+        href="{{ '/feed.xml' | prepend: site.baseurl | replace: '//', '/' }}">
+
+    {% assign og = page.facebook_meta %}
+    {% if og %}
+    <meta property="og:title" content="{{ og.title }}">
+    <meta property="og:description" content="{{ og.description }}">
+    <meta property="og:image" content="{{ og.image }}">
+    <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url | replace: '//', '/' }}">
+    {% endif %}
+
+    {% assign twitter = page.twitter_meta %}
+    {% if twitter %}
+    <meta name="twitter:title" content="{{ twitter.title }}">
+    <meta name="twitter:description" content="{{ twitter.description }}">
+    <meta name="twitter:image" content="{{ twitter.image }}">
+    <meta name="twitter:card" content="{{ twitter.card }}">
+    {% endif %}
+</head>

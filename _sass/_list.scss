@@ -1,0 +1,21 @@
+.posts-list {
+    list-style: none;
+
+    li {
+        display: block;
+
+        &::before {
+            content: '→';
+            color: $PRIMARY_COLOR;
+            margin-right: 1rem;
+        }
+
+        + li {
+            margin-top: 1rem;
+        }
+    }
+
+    &-date {
+        color: $TERTIARY_COLOR;
+    }
+}

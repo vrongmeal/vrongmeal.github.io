@@ -1,0 +1,11 @@
+- name: Github
+  base_url: '//github.com/'
+  username: 'vrongmeal'
+- name: LinkedIn
+  url: '//www.linkedin.com/in/vrongmeal/'
+- name: Facebook
+  base_url: '//www.facebook.com/'
+  username: 'vrongmeal'
+- name: Instagram
+  base_url: '//www.instagram.com/'
+  username: 'vrongmeal'

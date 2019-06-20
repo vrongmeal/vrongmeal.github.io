@@ -1,0 +1,15 @@
+<footer>
+    <ul class="footer">
+        <li>&copy; 2019 {{ site.name }}</li>
+        {% if page.title != 'Contact' %}
+        {% if site.email %}
+        <li><a href="mailto:{{ site.email }}">{{site.email}}</a></li>
+        {% endif %}
+        {% for social in site.data.social %}
+        <li><a
+                href="{% if social.base_url %}{{ social.username | prepend: social.base_url }}{% else %}{{ social.url }}{% endif %}">{{ social.name }}</a>
+        </li>
+        {% endfor %}
+        {% endif %}
+    </ul>
+</footer>

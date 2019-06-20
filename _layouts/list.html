@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<ul class="posts-list">
+    {% if page.category %}
+    {% assign posts = site.posts | where: 'category', page.category %}
+    {% else %}
+    {% assign posts = site.posts %}
+    {% endif %}
+    {% for post in posts %}
+    <li>
+        <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a>
+        <span class="posts-list-date">{{ post.date | date_to_string }}</span>
+    </li>
+    {% endfor %}
+</ul>

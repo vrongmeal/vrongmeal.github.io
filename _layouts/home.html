@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<div class="posts">
+    <!-- assign posts = site.posts | reverse -->
+    {% for post in paginator.posts %}
+    <div class="post-card">
+        <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}" class="post-heading">{{ post.title }}</a>
+        <div class="post-date-and-category">
+            {{ post.date | date_to_string }} :: <a class="post-category"
+                href="{{ '/posts' | prepend: site.baseurl | replace: '//', '/' }}/{{ post.category }}">{{ site.data.categories[post.category] }}</a>
+        </div>
+        <div class="post-excerpt markdownify">
+            {{ post.excerpt | markdownify }}
+        </div>
+        <div><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}" class="post-read-more"></a></div>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="pagination">
+    {% assign prev = '&larr; Prev' %}
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ prev }}</a>
+    {% else %}
+    <span class="pagination-no-link">{{ prev }}</span>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+    <span class="pagination-selected-page">{{ page }}</span>
+    {% elsif page == 1 %}
+    <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+    <a
+        href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+    {% endfor %}
+
+    {% assign next = 'Next &rarr;' %}
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ next }}</a>
+    {% else %}
+    <span class="pagination-no-link">{{ next }}</span>
+    {% endif %}
+</div>

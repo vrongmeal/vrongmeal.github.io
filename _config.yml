@@ -1,0 +1,56 @@
+title: vrongmeal
+name: Vaibhav
+email: vrongmeal@gmail.com
+description: >-
+  About, Portfolio, Blog and Contact of Vaibhav (vrongmeal)
+
+baseurl: ''
+url: '//vrongmeal.github.io'
+
+markdown: kramdown
+kramdown:
+  highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+permalink: '/posts/:categories/:slug:output_ext'
+paginate: 5
+paginate_path: "/page:num/"
+
+collections:
+  categories:
+    output: true
+    permalink: '/posts/:name'
+
+defaults:
+  - scope:
+      path: ""
+      type: "categories"
+    values:
+      layout: "list"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md

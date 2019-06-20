@@ -1,0 +1,183 @@
+.post {
+    &-content {
+        padding: 2rem 0;
+        margin: 2rem 0;
+        border-bottom: 1px solid $CONTAINER_BORDER_COLOR;
+    }
+
+    &-footer {
+        margin-top: 2rem;
+    }
+}
+
+
+.markdownify {
+    overflow: hidden;
+    overflow-wrap: normal;
+
+    p, h1, h2, h3, h4, h5, h5, h6, pre,
+    ul, ol, table, img, dl {
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+    }
+
+    li, dt, dd {
+        line-height: 1.6;
+        margin-bottom: .8rem;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    del {
+        text-decoration: line-through;
+    }
+
+    code {
+        background-color: rgba($color: $SECONDARY_COLOR, $alpha: .2);
+        padding: 0 .2rem;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: bold;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    h5 {
+        font-size: 1.1rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+
+    blockquote {
+        padding-left: 2rem;
+        border-left: 1px dashed $CONTAINER_BORDER_COLOR;
+    }
+
+    pre {
+        padding: 1rem;
+        border: 1px dashed $CONTAINER_BORDER_COLOR;
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        code {
+            background-color: transparent;
+            padding: 0;
+        }
+    }
+
+    figure.highlight > pre {
+        padding: 0;
+    }
+
+    .rouge {
+        &-table {
+            margin-bottom: 0;
+
+            td, th {
+                padding: 0;
+                border: 0;
+            }
+
+            pre {
+                border: 0;
+                margin: 0;
+            }
+        }
+    }
+
+    .lineno {
+        color: $CONTAINER_BORDER_COLOR;
+    }
+
+    ol {
+        margin-left: 2.5rem;
+        list-style: decimal;
+
+        ol {
+            margin-top: 1.5rem;
+            list-style: lower-alpha;
+
+            ol {
+                list-style: lower-roman;
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin-left: 1rem;
+
+        ul {
+            margin-top: 1.5rem;
+            margin-left: 2rem;
+        }
+
+        li {
+            &::before {
+                content: "→";
+                color: $SECONDARY_COLOR;
+                margin-right: 1rem;
+            }
+
+            li {
+                &::before {
+                    content: "\25BA";
+                }
+
+                li::before {
+                    content: ">";
+                }
+            }
+        }
+    }
+
+    table {
+        border-collapse: collapse;
+
+        td, th {
+            padding: .8rem 1rem;
+            border: 1px dashed $CONTAINER_BORDER_COLOR;
+        }
+
+        th {
+            font-weight: bold;
+            color: $SECONDARY_COLOR;
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    dt {
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    dd {
+        margin-left: 2rem;
+    }
+}

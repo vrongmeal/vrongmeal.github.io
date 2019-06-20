@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<main>
+    <div class="post-heading">{{ page.title }}</div>
+    {% if page.non_post != true %}
+    <div class="post-date-and-category">
+        {{ page.date | date_to_string }} :: <a class="post-category"
+            href="{{ '/posts' | prepend: site.baseurl | replace: '//', '/' }}/{{ page.category }}">{{ site.data.categories[page.category] }}</a>
+    </div>
+    {% endif %}
+    <section class="markdownify post-content">
+        {{ content }}
+    </section>
+    {% if page.non_post != true %}
+    <div class="post-footer">
+        {% if page.previous.url %}
+        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}">
+            &larr; {{ page.previous.title }}</a>
+        {% endif %}
+        {% if page.previous.url and page.next.url %}::{% endif %}
+        {% if page.next.url %}
+        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}">
+            {{ page.next.title }} &rarr;
+        </a>
+        {% endif %}
+    </div>
+    {% endif %}
+</main>

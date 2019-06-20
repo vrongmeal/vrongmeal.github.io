@@ -1,0 +1,10 @@
+<header>
+    <div class="header">
+        <a class="header-title" href="/">Vaibhav</a>
+    </div>
+    <ul class="nav">
+        {% for item in site.data.nav %}
+        <li><a href="{{ item.link }}" {% if item.tab == 'new' %}target="blank" {% endif %}>{{ item.name }}</a></li>
+        {% endfor %}
+    </ul>
+</header>

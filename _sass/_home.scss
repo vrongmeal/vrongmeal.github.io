@@ -1,0 +1,87 @@
+.post {
+    &-card {
+        width: 100%;
+        border-bottom: {
+            width: 1px;
+            color: $CONTAINER_BORDER_COLOR;
+            style: solid;
+        }
+        padding: 2rem 0;
+        margin-bottom: 1rem;
+
+        &:first-child {
+            border-top: {
+                width: 1px;
+                color: $CONTAINER_BORDER_COLOR;
+                style: solid;
+            }
+        }
+    }
+
+    &-heading {
+        font-weight: bold;
+        font-size: 1.3rem;
+        color: $PRIMARY_COLOR;
+        text-decoration: none;
+        display: block;
+        position: relative;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: {
+            width: 0.2rem;
+            color: $PRIMARY_COLOR;
+            style: dotted;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: .1rem;
+            display: block;
+            width: 100%;
+            border-bottom: {
+                width: 0.2rem;
+                color: $PRIMARY_COLOR;
+                style: dotted;
+            }
+        }
+    }
+
+    &-date-and-category,
+    &-category {
+        color: $TERTIARY_COLOR;
+    }
+
+    &-date-and-category {
+        margin-bottom: 1rem;
+    }
+
+    &-excerpt {
+        margin-bottom: 1.5rem;
+    }
+
+    &-read-more {
+        text-decoration: none;
+
+        &::before {
+            content: 'Read more';
+        }
+
+        &::after {
+            content: '→';
+            margin-left: .5rem;
+        }
+    }
+}
+
+.pagination {
+    margin-top: 2rem;
+
+    &-selected-page {
+        color: $PRIMARY_COLOR;
+    }
+
+    &-no-link {
+        color: $CONTAINER_BORDER_COLOR;
+    }
+}
