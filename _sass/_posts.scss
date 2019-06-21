@@ -16,7 +16,7 @@
     overflow-wrap: normal;
 
     p, h1, h2, h3, h4, h5, h5, h6, pre,
-    ul, ol, table, img, dl {
+    ul, ol, table, img, dl, hr {
         margin-bottom: 1.5rem;
         line-height: 1.6;
     }
@@ -179,5 +179,10 @@
 
     dd {
         margin-left: 2rem;
+    }
+
+    hr {
+        border: 0;
+        border-top: 1px dashed $CONTAINER_BORDER_COLOR;
     }
 }
