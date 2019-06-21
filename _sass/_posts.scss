@@ -185,4 +185,14 @@
         border: 0;
         border-top: 1px dashed $CONTAINER_BORDER_COLOR;
     }
+
+    sup {
+        vertical-align: super;
+        font-size: smaller;
+    }
+
+    sub {
+        vertical-align: sub;
+        font-size: smaller;
+    }
 }
