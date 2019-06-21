@@ -141,6 +141,45 @@ Another great read would be [Go-tcha: When nil != nil](//dev.to/pauljlucas/go-tc
 
 Bottom line, use `interface`! You can assert type if it's not nil or use the same type. Just remember to add the `Error() string` and make your type implement the `error` interface.
 
+At the end your error package should look something like this:
+
+{% highlight go linenos %}
+package myerror
+
+import "fmt"
+
+type MyError interface {
+	error // To implement the error interface
+	Code() int
+	Message() string
+}
+
+type myErr struct {
+	errCode int
+	errMsg  string
+}
+
+func (e *myErr) Error() string {
+	return fmt.Sprintf("%d: %s", e.errCode, e.errMsg)
+}
+
+func (e *myErr) Code() int {
+	return e.errCode
+}
+
+func (e *myErr) Message() string {
+	return e.errMsg
+}
+
+func NewMyError(code int, message string) MyError {
+	return &myErr{
+		errCode: code,
+		errMsg:  message,
+	}
+}
+
+{% endhighlight %}
+
 ## References
 
 1. [www.calhoun.io/when-nil-isnt-equal-to-nil/](//www.calhoun.io/when-nil-isnt-equal-to-nil/)
