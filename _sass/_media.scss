@@ -1,0 +1,14 @@
+@media all and (max-width: 900px) {
+	.container {
+		margin: {
+			top: 0;
+			bottom: 0;
+		}
+	}
+}
+
+@media all and (max-width: 480px) {
+	html {
+		font-size: 7vw;
+	}
+}
