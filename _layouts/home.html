@@ -45,3 +45,30 @@ layout: default
     <span class="pagination-no-link">{{ next }}</span>
     {% endif %}
 </div>
+
+<script type="text/javascript">
+var idx = undefined;
+
+$(document).ready(function () {
+    $.ajax({
+        type: "GET",
+        url: "/search.json",
+        success: function (result) {
+            idx = lunr(function () {
+              this.ref("slug");
+              this.field("title");
+
+              result.forEach(function (doc) {
+                this.add(doc)
+              }, this);
+            });
+
+            console.log(idx.search("*sds*"));
+            console.log(idx.search("*go*"));
+        },
+        error: function (xhr, status, error) {
+            console.log(status, error);
+        }
+    });
+});
+</script>

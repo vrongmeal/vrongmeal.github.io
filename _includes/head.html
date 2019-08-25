@@ -12,6 +12,9 @@
     <link rel="alternate" type="application/atom+xml" title="Vaibhav"
         href="{{ '/feed.xml' | prepend: site.baseurl | replace: '//', '/' }}">
 
+    <script type="text/javascript" src="/static/js/jquery.js"></script>
+    <script type="text/javascript" src="/static/js/lunr.js"></script>
+
     {% assign og = page.facebook_meta %}
     {% if og %}
     <meta property="og:title" content="{{ og.title }}">

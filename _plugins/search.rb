@@ -6,13 +6,14 @@ module Jekyll
         safe true
         priority :lowest
 
-        def item(id, title, categories, excerpt, date)
+        def item(id, title, categories, excerpt, date, slug)
             return {
                 :id => id,
                 :title => title,
                 :categories => categories,
                 :excerpt => excerpt,
                 :date => date,
+                :slug => slug,
             }.freeze
         end
 
@@ -25,7 +26,8 @@ module Jekyll
                 categories = post.data["categories"]
                 excerpt = post.data["excerpt"]
                 date = post.data["date"]
-                ls = Array(ls).push(item(id, title, categories, excerpt, date))
+                slug = post.data["slug"]
+                ls = Array(ls).push(item(id, title, categories, excerpt, date, slug))
             end
             search = Jekyll::Page.new(site, __dir__, "", "search.json")
             search.content = ls.to_json
