@@ -8,6 +8,6 @@ Color scheme used is Solarized Dark.
 
 ## WIP
 
-- [ ] Responsive
+- [x] Responsive
 - [ ] Projects
 - [ ] Documentation on how to customize the theme
