@@ -1,0 +1,41 @@
+-
+  var title = "Vaibhav (@vrongmeal)"
+  var links = [
+    {
+      title: "About",
+      href:  "#about",
+    },
+    {
+      title: "Contact",
+      href:  "#contact",
+    },
+    {
+      title: "Projects",
+      href:  "#projects",
+    },
+    {
+      title: "Blog",
+      href:  "#blog",
+    },
+    {
+      title: "Résumé",
+      href:  "#resume"
+    }
+  ]
+
+doctype html
+html(lang="")
+  include includes/head.pug
+  body
+    include includes/wip.pug
+    .landing-main
+      .landing-main-heading
+        .landing-main-heading-content
+          .landing-main-heading-content-title Vaibhav
+          .landing-main-heading-content-context
+            p Software Developer
+            p @vrongmeal
+      .landing-main-footing
+        each link in links
+          .landing-main-footing-link
+            a(href=link.href) #{link.title}

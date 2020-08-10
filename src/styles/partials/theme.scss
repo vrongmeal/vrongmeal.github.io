@@ -1,0 +1,36 @@
+$base-font-size:  16px;
+$default-font:    "JetBrains Mono";
+
+:root {
+  font-size:   $base-font-size;
+  font-family: $default-font;
+
+  --primary-color:    #111111;
+  --secondary-color:  #444444;
+  --font-color:       #272727;
+  --background-color: #FDFDFD;
+}
+
+html, body {
+  width:  100%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--background-color);
+  color:            var(--font-color);
+  font-size:        1rem;
+}
+
+a {
+  color:           var(--primary-color);
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: dotted;
+  }
+}

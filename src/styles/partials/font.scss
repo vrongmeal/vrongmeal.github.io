@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "JetBrains Mono";
+  src:         url("../fonts/JetBrainsMono/woff2/JetBrainsMono-Regular.woff2") format("woff2"),
+               url("../fonts/JetBrainsMono/woff/JetBrainsMono-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style:  normal;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src:         url("../fonts/JetBrainsMono/woff2/JetBrainsMono-Bold.woff2") format("woff2"),
+               url("../fonts/JetBrainsMono/woff/JetBrainsMono-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style:  normal;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src:         url("../fonts/JetBrainsMono/woff2/JetBrainsMono-Italic.woff2") format("woff2"),
+               url("../fonts/JetBrainsMono/woff/JetBrainsMono-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style:  italic;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src:         url("../fonts/JetBrainsMono/woff2/JetBrainsMono-Bold-Italic.woff2") format("woff2"),
+               url("../fonts/JetBrainsMono/woff/JetBrainsMono-Bold-Italic.woff") format("woff");
+  font-weight: bold;
+  font-style:  italic;
+}
