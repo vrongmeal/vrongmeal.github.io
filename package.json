@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "serve": "parcel serve src/*.pug",
-    "build": "parcel build src/*.pug && cp CNAME ./dist"
+    "build": "parcel build src/*.pug"
   },
   "keywords": [],
   "author": "",

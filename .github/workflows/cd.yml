@@ -19,6 +19,9 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Add CNAME
+        run: cp CNAME ./dist
       
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.5.9
