@@ -1,0 +1,85 @@
+.markdown {
+  line-height: 1.5;
+  
+  strong {
+    font-weight: bold;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  del {
+    text-decoration: line-through;
+  }
+
+  ins {
+    text-decoration: underline;
+  }
+
+  a {
+    @extend a;
+  }
+
+  code {
+    color: var(--secondary-color);
+  }
+
+  h1, h2, h3, h4, h6 {
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  h4, h5 {
+    text-transform: uppercase;
+  }
+
+  blockquote {
+    color:      var(--secondary-color);
+    font-style: italic;
+
+    border-left:  0.2rem solid var(--secondary-color);
+    padding-left: 1rem;
+  }
+
+  ul, ol {
+    margin-left: 2rem;
+  }
+
+  ul {
+    list-style-type: circle;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  pre {
+    padding: 0 2rem;
+    overflow-x: scroll;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  p, div, h1, h2, h3, h4, h5, h6, blockquote, ul, ol, pre, img {
+    display:       block;
+    margin-bottom: 1rem;
+  }
+
+  ul ol, ol ul {
+    margin-bottom: 0;
+  }
+}

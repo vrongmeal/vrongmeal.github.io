@@ -1,0 +1,7 @@
+extends layouts/page.pug
+
+block title
+  | Contact - Vaibhav (@vrongmeal)
+
+block main
+  include:markdown-it(linkify, html) markdowns/contact.md

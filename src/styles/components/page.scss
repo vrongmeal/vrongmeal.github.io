@@ -1,0 +1,75 @@
+.container {
+  width:  100%;
+  height: 100%;
+
+  display:        flex;
+  flex-direction: row;
+}
+
+$header-width: 20rem;
+
+//
+// Header
+//
+
+header, .header-cover {
+  width:  $header-width;
+  height: 100%;
+}
+
+header {
+  position: fixed;
+  top:      0;
+  left:     0;
+
+  display:         flex;
+  flex-direction:  column;
+
+  overflow: hidden;
+}
+
+  .header-heading {
+    width:      100%;
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+    .header-heading-title {
+      @extend .landing-main-heading-content-title;
+
+      font-size:       3rem;
+      display:         block;
+      text-decoration: none;
+    }
+
+    .header-heading-context {
+      @extend .landing-main-heading-content-context;
+      
+      p {
+        line-height: 1.2;
+      }
+    }
+  
+  .header-nav {
+    margin-top: 4rem;
+    width:      100%;
+    padding:    0 5rem;
+
+    p {
+      line-height: 2.5;
+    }
+  }
+
+//
+// Main
+//
+
+main {
+  width: calc(100% - #{$header-width});
+
+  padding: 3rem 5rem;
+
+  overflow-x: hidden;
+
+  @extend .markdown;
+}

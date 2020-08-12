@@ -1,8 +1,10 @@
 @import "partials/reset";
 @import "partials/font";
 @import "partials/theme";
+@import "partials/markdown";
 
 @import "components/index";
+@import "components/page";
 
 .wip {
   position: absolute;

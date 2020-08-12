@@ -1,0 +1,8 @@
+exclude:
+- DEFAULTS
+- .cache/
+- dist/
+
+exec:
+- npm run build
+- caddy file-server --listen ":1234" --root ./dist

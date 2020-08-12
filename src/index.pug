@@ -1,41 +1,17 @@
--
-  var title = "Vaibhav (@vrongmeal)"
-  var links = [
-    {
-      title: "About",
-      href:  "#about",
-    },
-    {
-      title: "Contact",
-      href:  "#contact",
-    },
-    {
-      title: "Projects",
-      href:  "#projects",
-    },
-    {
-      title: "Blog",
-      href:  "#blog",
-    },
-    {
-      title: "Resume",
-      href:  "#resume"
-    }
-  ]
+extends layouts/base.pug
 
-doctype html
-html(lang="")
-  include includes/head.pug
-  body
-    include includes/wip.pug
-    .landing-main
-      .landing-main-heading
-        .landing-main-heading-content
-          .landing-main-heading-content-title Vaibhav
-          .landing-main-heading-content-context
-            p Software Developer
-            p @vrongmeal
-      .landing-main-footing
-        each link in links
-          .landing-main-footing-link
-            a(href=link.href) #{link.title}
+block title
+  | Vaibhav (@vrongmeal)
+
+block content
+  .landing-main
+    .landing-main-heading
+      .landing-main-heading-content
+        .landing-main-heading-content-title Vaibhav
+        .landing-main-heading-content-context
+          p Software Developer
+          p @vrongmeal
+    .landing-main-footing
+      each link in links
+        .landing-main-footing-link
+          a(href=link.href) #{link.title}

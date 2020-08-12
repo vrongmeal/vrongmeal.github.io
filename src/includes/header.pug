@@ -1,0 +1,10 @@
+header
+  .header-heading
+    a(href="/").header-heading-title Vaibhav
+    .header-heading-context
+      p Software Developer
+      p @vrongmeal
+  .header-nav
+    each link in links
+      p
+        a(href=link.href) #{link.title}
