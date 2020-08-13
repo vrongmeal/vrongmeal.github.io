@@ -22,7 +22,7 @@ pages. This can be seen [here](./.github/workflows/cd.yml).
     $ npm run serve
     ```
 
-    Now visit [http://127.0.0.1:1234/index.html]
+    Now visit [http://127.0.0.1:1234/index.html](http://127.0.0.1:1234/index.html)
 
 2. Preferred way requires installing [Caddy](https://caddyserver.com/download)
   and [Leaf](https://github.com/vrongmeal/leaf)
@@ -32,7 +32,7 @@ pages. This can be seen [here](./.github/workflows/cd.yml).
     $ leaf
     ```
 
-    Now visit [http://127.0.0.1:1234]
+    Now visit [http://127.0.0.1:1234](http://127.0.0.1:1234)
 
 ## TODO
 
