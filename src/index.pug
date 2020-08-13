@@ -12,6 +12,12 @@ block content
           p Software Developer
           p @vrongmeal
     .landing-main-footing
-      each link in links
-        .landing-main-footing-link
-          a(href=link.href) #{link.title}
+      div
+        each link in nav
+          .landing-main-footing-link
+            a(href=link.href) #{link.title}
+      div
+        each link in contact
+          .landing-main-footing-icon
+            a(href=link.href, target="_blank")
+              img(src=link.icon, alt=link.alt)

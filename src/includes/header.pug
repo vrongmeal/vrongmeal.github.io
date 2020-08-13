@@ -1,10 +1,15 @@
 header
-  .header-heading
-    a(href="/").header-heading-title Vaibhav
-    .header-heading-context
-      p Software Developer
-      p @vrongmeal
-  .header-nav
-    each link in links
-      p
-        a(href=link.href) #{link.title}
+  div
+    .header-heading
+      a(href="/").header-heading-title Vaibhav
+      .header-heading-context
+        p Software Developer
+        p @vrongmeal
+    .header-nav
+      each link in nav
+        p
+          a(href=link.href) #{link.title}
+  .header-contact
+    each link in contact
+      a(href=link.href, target="_blank")
+        img(src=link.icon, alt=link.alt)
