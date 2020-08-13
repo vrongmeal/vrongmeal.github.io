@@ -1,14 +1,16 @@
-$base-font-size:  16px;
-$default-font:    "JetBrains Mono";
+$base-font-size: 16px;
+$default-font:   "Poppins", sans-serif;
+$monospace-font: "JetBrains Mono", monospace;
 
 :root {
   font-size:   $base-font-size;
   font-family: $default-font;
 
-  --primary-color:    #111111;
-  --secondary-color:  #666666;
-  --font-color:       #272727;
-  --background-color: #FDFDFD;
+  --primary-color:      #111111;
+  --secondary-color:    #666666;
+  --font-color:         #272727;
+  --background-color:   #FDFDFD;
+  --secondary-bg-color: #ececec;
 }
 
 html, body {

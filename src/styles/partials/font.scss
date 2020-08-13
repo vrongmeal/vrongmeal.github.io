@@ -6,26 +6,4 @@
   font-style:  normal;
 }
 
-@font-face {
-  font-family: "JetBrains Mono";
-  src:         url("../fonts/JetBrainsMono/woff2/JetBrainsMono-Bold.woff2") format("woff2"),
-               url("../fonts/JetBrainsMono/woff/JetBrainsMono-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style:  normal;
-}
-
-@font-face {
-  font-family: "JetBrains Mono";
-  src:         url("../fonts/JetBrainsMono/woff2/JetBrainsMono-Italic.woff2") format("woff2"),
-               url("../fonts/JetBrainsMono/woff/JetBrainsMono-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style:  italic;
-}
-
-@font-face {
-  font-family: "JetBrains Mono";
-  src:         url("../fonts/JetBrainsMono/woff2/JetBrainsMono-Bold-Italic.woff2") format("woff2"),
-               url("../fonts/JetBrainsMono/woff/JetBrainsMono-Bold-Italic.woff") format("woff");
-  font-weight: bold;
-  font-style:  italic;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');

@@ -4,5 +4,6 @@ exclude:
 - dist/
 
 exec:
+- rm -r dist
 - npm run build
 - caddy file-server --listen ":1234" --root ./dist

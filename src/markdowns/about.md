@@ -1,5 +1,7 @@
 # About
 
+![My photo with a cute puppy](images/about.jpg)
+
 > Hello, World! I am Vaibhav and I like to build stuff that you cannot touch
 > or feel.
 
@@ -35,4 +37,5 @@ I know a little bit of Rust, C++ too.
 
 I follow Football (soccer) and I love Cricket (#BleedBlue). I also started
 learning to cook. My favourite TV shows are Modern Family, Game of Thrones
-(till 6th Season), Friends and Gravity Falls.
+(till 6th Season), Friends and Gravity Falls. I mostly watch sitcoms, not
+really a movie guy, though I like watching rom-coms.
