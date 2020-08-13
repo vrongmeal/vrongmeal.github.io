@@ -1,5 +1,8 @@
 extends ../layouts/page.pug
 
+block title
+  | Projects - Vaibhav (@vrongmeal)
+
 block main
   h1 Projects
   -
@@ -17,4 +20,4 @@ block main
       p #{project.description}
   else
     p
-      em There are no projects to show
+      em There are no projects to show right now

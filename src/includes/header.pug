@@ -8,7 +8,7 @@ header
     .header-nav
       each link in nav
         p
-          a(href=link.href) #{link.title}
+          a(href=link.href, target=link.target) #{link.title}
   .header-contact
     each link in contact
       a(href=link.href, target="_blank")

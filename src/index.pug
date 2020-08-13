@@ -15,7 +15,7 @@ block content
       div
         each link in nav
           .landing-main-footing-link
-            a(href=link.href) #{link.title}
+            a(href=link.href, target=link.target) #{link.title}
       div
         each link in contact
           .landing-main-footing-icon

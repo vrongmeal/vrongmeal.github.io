@@ -14,8 +14,9 @@ module.exports = {
         href:  "/blog/index.pug",
       },
       {
-        title: "Resume",
-        href:  "#resume",
+        title:  "Resume",
+        href:   "/assets/resume_july_2020.pdf",
+        target: "_blank",
       },
     ],
     contact: [

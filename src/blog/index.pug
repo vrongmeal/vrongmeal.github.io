@@ -1,5 +1,8 @@
 extends ../layouts/page.pug
 
+block title
+  | Blog - Vaibhav (@vrongmeal)
+
 block main
   h1 Blog
   -
@@ -17,4 +20,4 @@ block main
       em.blog-post-date #{post.date.toDateString()}
   else
     p
-      em There are no posts to show
+      em There are no posts to show right now
