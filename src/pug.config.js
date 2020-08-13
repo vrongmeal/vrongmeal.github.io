@@ -35,7 +35,7 @@ module.exports = {
         href: "https://twitter.com/vrongmeal",
       },
       {
-        alt:  "LinkedIn (Vaibhav)",
+        alt:  "LinkedIn (Vaibhav VR)",
         icon: "/images/linkedin.png",
         href: "https://www.linkedin.com/in/vrongmeal/",
       },
