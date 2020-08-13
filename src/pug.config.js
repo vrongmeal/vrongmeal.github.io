@@ -11,11 +11,11 @@ module.exports = {
       },
       {
         title: "Projects",
-        href:  "#projects",
+        href:  "/projects/index.pug",
       },
       {
         title: "Blog",
-        href:  "#blog",
+        href:  "/blog/index.pug",
       },
       {
         title: "Resume",

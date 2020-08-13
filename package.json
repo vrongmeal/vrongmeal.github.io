@@ -2,10 +2,13 @@
   "name": "vrongmeal.github.io",
   "version": "1.0.0",
   "description": "Personal website/blog",
-  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vrongmeal/vrongmeal.github.io"
+  },
   "scripts": {
-    "serve": "parcel serve src/*.pug",
-    "build": "parcel build src/*.pug"
+    "serve": "parcel serve src/*.pug src/blog/*.pug src/projects/*.pug",
+    "build": "parcel build src/*.pug src/blog/*.pug src/projects/*.pug"
   },
   "keywords": [],
   "author": "",
