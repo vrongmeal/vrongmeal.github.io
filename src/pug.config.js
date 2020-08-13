@@ -49,6 +49,6 @@ module.exports = {
         icon: "/images/instagram.png",
         href: "https://www.instagram.com/vrongmeal/",
       },
-    ]
+    ],
   },
 };

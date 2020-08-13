@@ -2,3 +2,19 @@ extends ../layouts/page.pug
 
 block main
   h1 Blog
+  -
+    var posts = [
+      //- {
+      //-   title: "Sample Post",
+      //-   date:  new Date("August 15, 2020"),
+      //-   path:  "sample.pug",
+      //- },
+    ]
+  each post in posts
+    p
+      a(href=post.path)
+        strong #{post.title}
+      em.blog-post-date #{post.date.toDateString()}
+  else
+    p
+      em There are no posts to show

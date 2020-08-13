@@ -98,3 +98,22 @@ main {
 
   @extend .markdown;
 }
+
+//
+// Blog
+//
+
+.blog-post-date {
+  font-size: 0.8rem;
+  color:     var(--secondary-color);
+
+  margin-left: 0.5rem;
+}
+
+//
+// Projects
+//
+
+.project-title {
+  margin-bottom: 0.25rem;
+}

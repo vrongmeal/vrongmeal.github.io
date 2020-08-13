@@ -83,7 +83,11 @@
     max-width: 100%;
   }
 
-  p, div, h1, h2, h3, h4, h5, h6, blockquote, ul, ol, pre, img {
+  center {
+    text-align: center;
+  }
+
+  p, div, h1, h2, h3, h4, h5, h6, blockquote, ul, ol, pre, img, center {
     display:       block;
     margin-bottom: 1rem;
   }

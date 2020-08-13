@@ -2,3 +2,19 @@ extends ../layouts/page.pug
 
 block main
   h1 Projects
+  -
+    var projects = [
+      //- {
+      //-   title:       "Sample Project",
+      //-   description: "What it does and what it means...",
+      //-   path:        "sample.pug",
+      //- },
+    ]
+  each project in projects
+    div
+      h3.project-title
+        a(href=project.path) #{project.title}
+      p #{project.description}
+  else
+    p
+      em There are no projects to show

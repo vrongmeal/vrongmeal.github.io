@@ -5,20 +5,3 @@
 
 @import "components/index";
 @import "components/page";
-
-.wip {
-  position: absolute;
-
-  top:  0;
-  left: 0;
-
-  width:  100%;
-  height: auto;
-
-  padding: 0.5rem 0;
-
-  background-color: var(--secondary-color);
-  color:            var(--background-color);
-  text-align:       center;
-  font-size:        0.8rem;
-}
