@@ -1,0 +1,7 @@
+extends ../layouts/page.pug
+
+block title
+  | How I learned to stop worrying and start pinging - Vaibhav (@vrongmeal)
+
+block main
+  include:markdown-it(linkify, html) ../markdowns/blog/how-i-learned-to-stop-worrying-and-start-pinging.md
