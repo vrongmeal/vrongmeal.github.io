@@ -148,7 +148,13 @@
 <div class="container">
 
   <main>
-    <h1>How I learned to stop worrying and start pinging</h1>
+    <p>
+      <em>Posted on 23 Sep 2019</em>
+    </p>
+    <h1>
+      How I learned to stop worrying and start pinging
+      <a class="anchor-heading" href="/blog/how-i-learned-to-stop-worrying-and-start-pinging.html">#</a>
+    </h1>
 
     <blockquote>
   <p>Crosspost from the <a href="https://blog.sdslabs.co/2019/09/status-internal-hackathon">SDSLabs blog</a></p>
@@ -157,24 +163,60 @@
 <p><em>We have regular hackathons to experiment with new fields/technology. We decided to write blogs on any shippable product that we created during the hackathon. This blog is first in the series, where we created an app that creates status pages.</em></p>
 
 <p><img src="/static/blog/how-i-learned-to-stop-worrying-and-start-pinging-whiteboard.jpg" alt="Whiteboard" /></p>
-
-<h2 id="introduction">Introduction</h2>
-
-<h3 id="what-is-a-status-page">What is a Status Page?</h3>
+      <h2 id="introduction">
+        
+        
+          Introduction <a href="#introduction" class="anchor-heading">#</a>
+        
+        
+      </h2>
+    
+      <h3 id="what-is-a-status-page">
+        
+        
+          What is a Status Page? <a href="#what-is-a-status-page" class="anchor-heading">#</a>
+        
+        
+      </h3>
+    
 
 <p>Almost all organizations have a page where you can view the status (or uptime) of their services. For example, this is the SDSLabs Status page: <a href="https://statusv2.sdslabs.co/">https://statusv2.sdslabs.co/</a>. A webpage that displays the uptime/downtime statistics of its services is called a status page.</p>
-
-<h3 id="why-do-you-need-it">Why do you need it?</h3>
+      <h3 id="why-do-you-need-it">
+        
+        
+          Why do you need it? <a href="#why-do-you-need-it" class="anchor-heading">#</a>
+        
+        
+      </h3>
+    
 
 <p>A status page tells you whether an application is up or not. Suppose your Facebook notifications just stopped working. You might start to fiddle with the settings on your phone, but it may be that the Facebook servers that send notifications are down. A status page tells you exactly that. It is also pretty useful for companies too, making them aware of the downtime before a user has a chance to complain.</p>
-
-<h3 id="what-did-we-make">What did we make?</h3>
+      <h3 id="what-did-we-make">
+        
+        
+          What did we make? <a href="#what-did-we-make" class="anchor-heading">#</a>
+        
+        
+      </h3>
+    
 
 <p>We made a web application that creates these status pages. Many others provide the same service, such as Freshping, Apex Ping, and Atlassian Statuspage. However, these services are either paid or provide limited free access. Moreover, there are no open-source alternatives to them. So, we made one on our own (and yes it’s going to be open-source).</p>
-
-<h2 id="developing">Developing</h2>
-
-<h3 id="architecture">Architecture</h3>
+      <h2 id="developing">
+        
+        
+          Developing <a href="#developing" class="anchor-heading">#</a>
+        
+        
+      </h2>
+    
+      <h3 id="architecture">
+        
+        
+          Architecture <a href="#architecture" class="anchor-heading">#</a>
+        
+        
+      </h3>
+    
 
 <p>A status page consists of many services where it needs to check whether the service is working or not. However, what do we mean by the phrase “the service is working”? Usually, you ping the host, and if you receive a reply, the host server is up else it’s down. However, ping only tells you if your request can reach the server. The code may or may not function properly. For that, more parameters need to be checked, say, the status code of the response. A “200” status means your page is working fine, but any other status means you need to fix some issues.</p>
 
@@ -199,8 +241,14 @@
 <p>Due to a limited number of resources, first, we’re going to release a version without the described Kubernetes architecture. For the initial release, we’re aiming at an app which can spawn and manage workers on a single server.</p>
 
 <p><img src="/static/blog/how-i-learned-to-stop-worrying-and-start-pinging-master-worker.png" alt="Master-Worker" /></p>
-
-<h3 id="tech-stack">Tech Stack</h3>
+      <h3 id="tech-stack">
+        
+        
+          Tech Stack <a href="#tech-stack" class="anchor-heading">#</a>
+        
+        
+      </h3>
+    
 
 <p>We chose Golang since it’s a compiled language and all my team members were comfortable with writing code in Go. Go being a compiled language was helpful because we could create binaries of agents that would run on worker containers. It’s also much easier to write as compared to C/C++.</p>
 
@@ -209,8 +257,14 @@
 <p>For storing metrics of the statuses, we needed a time-series database. Struggling between Prometheus and InfluxDB, we found out about TimescaleDB. It’s an extension of PostgreSQL, so anything that works with Postgres works well with Timescale too. There were even more benefits to this since we did not want to write queries specifically for InfluxDB, and Prometheus being a pull-based DB did not fit our needs. With Postgres, we could use a single database for both metrics and meta-data.</p>
 
 <p>Many people don’t require all this functionality and just the metrics for a few checks. So there’s even a stand-alone mode where you can write a simple YAML file defining properties of checks, and it’ll do the job. Also, integrating with Prometheus was an easy job, so for the stand-alone user can plug in Prometheus too.</p>
-
-<h2 id="hackathon">Hackathon</h2>
+      <h2 id="hackathon">
+        
+        
+          Hackathon <a href="#hackathon" class="anchor-heading">#</a>
+        
+        
+      </h2>
+    
 
 <p>Organizing an internal hackathon turned out to be productive. Usually, the part of the process that takes much time gets completed in a matter of hours. It’s also encouraging to see everyone else around you working with such enthusiasm. It’s exciting to see all the products that others make in the end.</p>
 
