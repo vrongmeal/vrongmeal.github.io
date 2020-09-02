@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, .markdown a, main a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, .markdown a, main a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
@@ -71,7 +71,11 @@ a:focus { outline: dotted; }
 
 .markdown ul ol, main ul ol, .markdown ol ul, main ol ul { margin-bottom: 0; }
 
-.markdown a.anchor-heading, main a.anchor-heading { color: var(--secondary-color); font-weight: normal; text-decoration: none; font-size: 1rem; }
+.markdown .anchor-heading, main .anchor-heading { color: var(--secondary-color); font-weight: normal; text-decoration: none; font-size: 1rem; }
+
+.markdown h1 .anchor-heading, main h1 .anchor-heading, .markdown h2 .anchor-heading, main h2 .anchor-heading, .markdown h3 .anchor-heading, main h3 .anchor-heading, .markdown h4 .anchor-heading, main h4 .anchor-heading, .markdown h5 .anchor-heading, main h5 .anchor-heading, .markdown h6 .anchor-heading, main h6 .anchor-heading { display: none; }
+
+.markdown h1:hover .anchor-heading, main h1:hover .anchor-heading, .markdown h2:hover .anchor-heading, main h2:hover .anchor-heading, .markdown h3:hover .anchor-heading, main h3:hover .anchor-heading, .markdown h4:hover .anchor-heading, main h4:hover .anchor-heading, .markdown h5:hover .anchor-heading, main h5:hover .anchor-heading, .markdown h6:hover .anchor-heading, main h6:hover .anchor-heading { display: inline-block; }
 
 .landing-main { display: flex; flex-direction: column; align-content: space-between; width: 100%; height: 100%; }
 
@@ -80,6 +84,8 @@ a:focus { outline: dotted; }
 .landing-main-heading-content { width: auto; height: auto; text-align: center; }
 
 .landing-main-heading-content-title, .header-heading-title { font-size: 10rem; font-weight: bold; font-style: italic; color: var(--primary-color); }
+
+@media only screen and (max-width: 720px) { .landing-main-heading-content-title, .header-heading-title { font-size: 20vw; } }
 
 .landing-main-heading-content-context, .header-heading-context { color: var(--secondary-color); }
 
@@ -105,9 +111,11 @@ a:focus { outline: dotted; }
 
 .container { width: 100%; height: 100%; display: flex; flex-direction: row; }
 
-header { width: 20rem; height: 100%; }
+header { width: 20rem; height: 100%; position: fixed; top: 0; left: 0; display: flex; flex-direction: column; justify-content: space-between; z-index: 100; overflow: hidden; }
 
-header { position: fixed; top: 0; left: 0; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; }
+@media only screen and (max-width: 1072px) { header { left: -100%; transition: left 500ms; } header.active { left: 0; } }
+
+@media only screen and (max-width: 480px) { header { width: calc(100% - 4rem); } }
 
 .header-heading { width: 100%; text-align: center; margin-top: 3rem; }
 
@@ -115,9 +123,9 @@ header { position: fixed; top: 0; left: 0; display: flex; flex-direction: column
 
 .header-heading-context p { line-height: 1.2; }
 
-.header-nav { margin-top: 4rem; width: 100%; padding: 0 5rem; }
+.header-nav { margin-top: 4rem; width: 100%; }
 
-.header-nav p { line-height: 2.5; }
+.header-nav p { line-height: 2.5; text-align: center; }
 
 .header-contact { margin: 2rem 0 3rem; width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: center; }
 
@@ -127,12 +135,26 @@ header { position: fixed; top: 0; left: 0; display: flex; flex-direction: column
 
 .header-contact img { height: 1.2rem; width: 1.2rem; }
 
+.main-cover { display: none; opacity: 0; height: 100%; width: 100%; background-color: var(--background-color); backdrop-filter: blur(5px); top: 0; left: 0; position: fixed; z-index: 99; }
+
+@media only screen and (max-width: 1072px) { .main-cover { transition: opacity 500ms; } .main-cover.active { display: block; opacity: 0.75; } }
+
 main { width: calc(100% - 20rem); padding: 3rem 5rem; padding-left: 25rem; overflow-x: hidden; }
+
+@media only screen and (max-width: 1072px) { main { width: 100%; padding-left: 5rem; } }
+
+@media only screen and (max-width: 480px) { main { padding-left: 3.5rem; padding-right: 2rem; } }
 
 .blog-post-date { font-size: 0.8rem; color: var(--secondary-color); }
 
 .blog-list-date { margin-left: 0.5rem; }
 
 .project-title { margin-bottom: 0.25rem; }
+
+.menu-btn { display: none; height: 2rem; width: 2rem; position: fixed; top: 3.5rem; left: 1.5rem; z-index: 100; cursor: pointer; }
+
+@media only screen and (max-width: 1072px) { .menu-btn { display: inline-block; transition: left 500ms; } .menu-btn.active { left: 21.5rem; } }
+
+@media only screen and (max-width: 480px) { .menu-btn { left: 1rem; } .menu-btn.active { left: calc(100% - 4rem); } }
 
 /*# sourceMappingURL=main.css.map */
