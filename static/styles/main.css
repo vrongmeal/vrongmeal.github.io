@@ -29,6 +29,10 @@ a:hover { text-decoration: none; }
 
 a:focus { outline: dotted; }
 
+.medium-zoom-overlay { z-index: 101; }
+
+.medium-zoom-image { z-index: 102; }
+
 .markdown, main { line-height: 1.5; }
 
 .markdown strong, main strong { font-weight: bold; }
@@ -115,7 +119,7 @@ header { width: 20rem; height: 100%; position: fixed; top: 0; left: 0; display: 
 
 @media only screen and (max-width: 1072px) { header { left: -100%; transition: left 500ms; } header.active { left: 0; } }
 
-@media only screen and (max-width: 480px) { header { width: calc(100% - 4rem); } }
+@media only screen and (max-width: 480px) { header { width: calc(100% - 5.5rem); } }
 
 .header-heading { width: 100%; text-align: center; margin-top: 3rem; }
 
@@ -155,6 +159,6 @@ main { width: calc(100% - 20rem); padding: 3rem 5rem; padding-left: 25rem; overf
 
 @media only screen and (max-width: 1072px) { .menu-btn { display: inline-block; transition: left 500ms; } .menu-btn.active { left: 21.5rem; } }
 
-@media only screen and (max-width: 480px) { .menu-btn { left: 1rem; } .menu-btn.active { left: calc(100% - 4rem); } }
+@media only screen and (max-width: 480px) { .menu-btn { left: 1rem; } .menu-btn.active { left: 1.5remcalc(100% - 5.5rem); } }
 
 /*# sourceMappingURL=main.css.map */
