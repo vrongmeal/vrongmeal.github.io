@@ -1,0 +1,25 @@
+{
+  "name": "vrongmeal.github.io",
+  "version": "1.0.0",
+  "description": "About, Blog and Projects of Vaibhav, a.k.a., @vrongmeal",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build -d static/scripts -o index.js --no-source-maps _js/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vrongmeal/vrongmeal.github.io.git"
+  },
+  "keywords": [],
+  "author": "Vaibhav <vrongmeal@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vrongmeal/vrongmeal.github.io/issues"
+  },
+  "homepage": "https://github.com/vrongmeal/vrongmeal.github.io#readme",
+  "devDependencies": {
+    "jquery": "^3.5.1",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {}
+}

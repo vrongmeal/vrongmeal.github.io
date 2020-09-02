@@ -1,0 +1,144 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, .markdown a, main a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+@font-face { font-family: "JetBrains Mono"; src: url("/static/fonts/JetBrainsMono/woff2/JetBrainsMono-Regular.woff2") format("woff2"), url("/static/fonts/JetBrainsMono/woff/JetBrainsMono-Regular.woff") format("woff"); font-weight: normal; font-style: normal; }
+
+:root { font-size: 16px; font-family: "Poppins", sans-serif; --primary-color:      #111111; --secondary-color:    #666666; --font-color:         #272727; --background-color:   #FDFDFD; --secondary-bg-color: #ececec; }
+
+html, body { width: 100%; height: 100%; }
+
+body { background-color: var(--background-color); color: var(--font-color); font-size: 1rem; }
+
+a, .markdown a, main a { color: var(--primary-color); text-decoration: underline; }
+
+a:hover { text-decoration: none; }
+
+a:focus { outline: dotted; }
+
+.markdown, main { line-height: 1.5; }
+
+.markdown strong, main strong { font-weight: bold; }
+
+.markdown em, main em { font-style: italic; }
+
+.markdown del, main del { text-decoration: line-through; }
+
+.markdown ins, main ins { text-decoration: underline; }
+
+.markdown code, main code { background-color: var(--secondary-bg-color); color: var(--primary-color); font-family: "JetBrains Mono", monospace; }
+
+.markdown h1, main h1, .markdown h2, main h2, .markdown h3, main h3, .markdown h4, main h4, .markdown h6, main h6 { font-weight: bold; }
+
+.markdown h1, main h1 { font-size: 2rem; }
+
+.markdown h2, main h2 { font-size: 1.5rem; }
+
+.markdown h3, main h3 { font-size: 1.2rem; }
+
+.markdown h4, main h4, .markdown h5, main h5 { text-transform: uppercase; }
+
+.markdown blockquote, main blockquote { color: var(--secondary-color); font-style: italic; border-left: 0.2rem solid var(--secondary-color); padding-left: 1rem; }
+
+.markdown ul, main ul, .markdown ol, main ol { margin-left: 2rem; }
+
+.markdown ul, main ul { list-style-type: circle; }
+
+.markdown ol, main ol { list-style-type: decimal; }
+
+.markdown pre, main pre { padding: 1rem; overflow: auto; background-color: var(--secondary-bg-color); }
+
+.markdown pre code, main pre code { background-color: transparent; }
+
+.markdown img, main img { max-width: 100%; margin-left: auto; margin-right: auto; cursor: pointer; cursor: -webkit-zoom-in; cursor: -moz-zoom-in; }
+
+.markdown center, main center { text-align: center; }
+
+.markdown p, main p, .markdown div, main div, .markdown h1, main h1, .markdown h2, main h2, .markdown h3, main h3, .markdown h4, main h4, .markdown h5, main h5, .markdown h6, main h6, .markdown blockquote, main blockquote, .markdown ul, main ul, .markdown ol, main ol, .markdown pre, main pre, .markdown img, main img, .markdown center, main center { display: block; margin-bottom: 1rem; }
+
+.markdown ul ol, main ul ol, .markdown ol ul, main ol ul { margin-bottom: 0; }
+
+.zoom-img, .zoom-img-wrap { position: relative; z-index: 666; -webkit-transition: all 300ms; -o-transition: all 300ms; transition: all 300ms; }
+
+img.zoom-img { cursor: pointer; cursor: -webkit-zoom-out; cursor: -moz-zoom-out; }
+
+.zoom-overlay { z-index: 420; background: #fff; position: fixed; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; filter: "alpha(opacity=0)"; opacity: 0; -webkit-transition: opacity 300ms; -o-transition: opacity 300ms; transition: opacity 300ms; }
+
+.zoom-overlay-open .zoom-overlay { filter: "alpha(opacity=100)"; opacity: 1; }
+
+.zoom-overlay-open, .zoom-overlay-transitioning { cursor: default; }
+
+.landing-main { display: flex; flex-direction: column; align-content: space-between; width: 100%; height: 100%; }
+
+.landing-main-heading { display: flex; justify-content: center; align-items: center; width: 100%; height: calc(100% - 7rem); }
+
+.landing-main-heading-content { width: auto; height: auto; text-align: center; }
+
+.landing-main-heading-content-title, .header-heading-title { font-size: 10rem; font-weight: bold; font-style: italic; color: var(--primary-color); }
+
+.landing-main-heading-content-context, .header-heading-context { color: var(--secondary-color); }
+
+.landing-main-heading-content-context p, .header-heading-context p { line-height: 1.5; }
+
+.landing-main-footing { width: 100%; height: 7rem; text-align: center; line-height: 2.5; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+
+.landing-main-footing-link { display: inline; margin-left: 1rem; }
+
+.landing-main-footing-link::before { content: "/"; text-decoration: none; margin-right: 1rem; }
+
+.landing-main-footing-link:first-child { margin-left: 0; }
+
+.landing-main-footing-link:first-child::before { content: none; }
+
+.landing-main-footing-icon { display: inline-block; margin-left: 1rem; }
+
+.landing-main-footing-icon:first-child { margin-left: 0; }
+
+.landing-main-footing-icon a { text-decoration: none; }
+
+.landing-main-footing-icon img { height: 1.2rem; width: 1.2rem; }
+
+.container { width: 100%; height: 100%; display: flex; flex-direction: row; }
+
+header, .header-cover { width: 20rem; height: 100%; }
+
+header { position: fixed; top: 0; left: 0; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; }
+
+.header-heading { width: 100%; text-align: center; margin-top: 3rem; }
+
+.header-heading-title { font-size: 3rem; display: block; text-decoration: none; }
+
+.header-heading-context p { line-height: 1.2; }
+
+.header-nav { margin-top: 4rem; width: 100%; padding: 0 5rem; }
+
+.header-nav p { line-height: 2.5; }
+
+.header-contact { margin: 2rem 0 3rem; width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: center; }
+
+.header-contact a { display: block; margin-left: 1rem; }
+
+.header-contact a:first-child { margin-left: 0; }
+
+.header-contact img { height: 1.2rem; width: 1.2rem; }
+
+main { width: calc(100% - 20rem); padding: 3rem 5rem; overflow-x: hidden; }
+
+.blog-post-date { font-size: 0.8rem; color: var(--secondary-color); margin-left: 0.5rem; }
+
+.project-title { margin-bottom: 0.25rem; }
+
+/*# sourceMappingURL=main.css.map */
