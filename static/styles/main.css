@@ -63,7 +63,7 @@ a:focus { outline: dotted; }
 
 .markdown pre code, main pre code { background-color: transparent; }
 
-.markdown img, main img { max-width: 100%; margin-left: auto; margin-right: auto; cursor: pointer; cursor: -webkit-zoom-in; cursor: -moz-zoom-in; }
+.markdown img, main img { max-width: 100%; margin-left: auto; margin-right: auto; }
 
 .markdown center, main center { text-align: center; }
 
@@ -72,16 +72,6 @@ a:focus { outline: dotted; }
 .markdown ul ol, main ul ol, .markdown ol ul, main ol ul { margin-bottom: 0; }
 
 .markdown a.anchor-heading, main a.anchor-heading { color: var(--secondary-color); font-weight: normal; text-decoration: none; font-size: 1rem; }
-
-.zoom-img, .zoom-img-wrap { position: relative; z-index: 666; -webkit-transition: all 300ms; -o-transition: all 300ms; transition: all 300ms; }
-
-img.zoom-img { cursor: pointer; cursor: -webkit-zoom-out; cursor: -moz-zoom-out; }
-
-.zoom-overlay { z-index: 420; background: #fff; position: fixed; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; filter: "alpha(opacity=0)"; opacity: 0; -webkit-transition: opacity 300ms; -o-transition: opacity 300ms; transition: opacity 300ms; }
-
-.zoom-overlay-open .zoom-overlay { filter: "alpha(opacity=100)"; opacity: 1; }
-
-.zoom-overlay-open, .zoom-overlay-transitioning { cursor: default; }
 
 .landing-main { display: flex; flex-direction: column; align-content: space-between; width: 100%; height: 100%; }
 
@@ -139,7 +129,9 @@ header { position: fixed; top: 0; left: 0; display: flex; flex-direction: column
 
 main { width: calc(100% - 20rem); padding: 3rem 5rem; padding-left: 25rem; overflow-x: hidden; }
 
-.blog-post-date { font-size: 0.8rem; color: var(--secondary-color); margin-left: 0.5rem; }
+.blog-post-date { font-size: 0.8rem; color: var(--secondary-color); }
+
+.blog-list-date { margin-left: 0.5rem; }
 
 .project-title { margin-bottom: 0.25rem; }
 
