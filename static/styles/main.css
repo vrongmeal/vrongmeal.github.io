@@ -17,7 +17,9 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 @font-face { font-family: "JetBrains Mono"; src: url("/static/fonts/JetBrainsMono/woff2/JetBrainsMono-Regular.woff2") format("woff2"), url("/static/fonts/JetBrainsMono/woff/JetBrainsMono-Regular.woff") format("woff"); font-weight: normal; font-style: normal; }
 
-:root { font-size: 16px; font-family: "Poppins", sans-serif; --primary-color:      #111111; --secondary-color:    #666666; --font-color:         #272727; --background-color:   #FDFDFD; --secondary-bg-color: #ececec; }
+:root { font-size: 16px; font-family: "Poppins", sans-serif; --primary-color:      #111111; --secondary-color:    #666666; --font-color:         #272727; --background-color:   #FDFDFD; --secondary-bg-color: #E0E0E0; --overlay-color:      255, 255, 255; }
+
+@media (prefers-color-scheme: dark) { :root { --primary-color:      #EEEEEE; --secondary-color:    #999999; --font-color:         #D8D8D8; --background-color:   #020202; --secondary-bg-color: #1F1F1F; --overlay-color:      0, 0, 0; } }
 
 html, body { width: 100%; height: 100%; }
 
@@ -29,7 +31,9 @@ a:hover { text-decoration: none; }
 
 a:focus { outline: dotted; }
 
-.medium-zoom-overlay { z-index: 101; }
+svg { fill: currentColor; }
+
+.medium-zoom-overlay { z-index: 101; background-color: var(--background-color) !important; }
 
 .medium-zoom-image { z-index: 102; }
 
@@ -113,15 +117,15 @@ a:focus { outline: dotted; }
 
 .landing-main-footing-icon a { text-decoration: none; }
 
-.landing-main-footing-icon img { height: 1.2rem; width: 1.2rem; }
+.landing-main-footing-icon .img { height: 1.2rem; width: 1.2rem; }
 
-@media only screen and (max-width: 480px) { .landing-main-footing-icon img { height: 1.5rem; width: 1.5rem; } }
+@media only screen and (max-width: 480px) { .landing-main-footing-icon .img { height: 1.5rem; width: 1.5rem; } }
 
 .container { width: 100%; height: 100%; display: flex; flex-direction: row; }
 
 header { width: 20rem; height: 100%; position: fixed; top: 0; left: 0; display: flex; flex-direction: column; justify-content: space-between; z-index: 100; overflow: hidden; }
 
-@media only screen and (max-width: 1072px) { header { left: -100%; transition: left 500ms; background-color: rgba(255, 255, 255, 0.6); } header.active { left: 0; } }
+@media only screen and (max-width: 1072px) { header { left: -100%; transition: left 500ms; background-color: rgba(var(--overlay-color), 0.6); } header.active { left: 0; } }
 
 @media only screen and (max-width: 480px) { header { width: calc(100% - 5.5rem); } }
 
@@ -145,13 +149,13 @@ header { width: 20rem; height: 100%; position: fixed; top: 0; left: 0; display: 
 
 .header-contact a:first-child { margin-left: 0; }
 
-.header-contact img { height: 1.2rem; width: 1.2rem; }
+.header-contact .img { height: 1.2rem; width: 1.2rem; }
 
-@media only screen and (max-width: 480px) { .header-contact img { height: 1.5rem; width: 1.5rem; } }
+@media only screen and (max-width: 480px) { .header-contact .img { height: 1.5rem; width: 1.5rem; } }
 
-.main-cover { display: none; opacity: 0; height: 100%; width: 100%; background-color: var(--background-color); backdrop-filter: blur(5px); top: 0; left: 0; position: fixed; z-index: 99; }
+.main-cover { display: none; height: 100%; width: 100%; background-color: rgba(var(--overlay-color), 0); backdrop-filter: blur(5px); top: 0; left: 0; position: fixed; z-index: 99; }
 
-@media only screen and (max-width: 1072px) { .main-cover { transition: opacity 500ms; } .main-cover.active { display: block; opacity: 0.75; } }
+@media only screen and (max-width: 1072px) { .main-cover { transition: background-color 500ms; } .main-cover.active { display: block; background-color: rgba(var(--overlay-color), 0.35); } }
 
 main { width: calc(100% - 20rem); padding: 3rem 5rem; padding-left: 25rem; overflow-x: hidden; }
 
@@ -165,7 +169,7 @@ main { width: calc(100% - 20rem); padding: 3rem 5rem; padding-left: 25rem; overf
 
 .project-title { margin-bottom: 0.25rem; }
 
-.menu-btn { display: none; height: 2rem; width: 2rem; position: fixed; top: 3.5rem; left: 1.5rem; z-index: 100; cursor: pointer; }
+.menu-btn { display: none; height: 2rem; width: 2rem; position: fixed; top: 3.5rem; left: 1.5rem; z-index: 100; cursor: pointer; color: var(--primary-color); }
 
 @media only screen and (max-width: 1072px) { .menu-btn { display: inline-block; transition: left 500ms; } .menu-btn.active { left: 22rem; } }
 
