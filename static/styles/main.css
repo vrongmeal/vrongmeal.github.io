@@ -33,7 +33,7 @@ a:focus { outline: dotted; }
 
 svg { fill: currentColor; }
 
-.medium-zoom-overlay { z-index: 101; background-color: var(--background-color) !important; }
+.medium-zoom-overlay { z-index: 101; background-color: rgba(var(--overlay-color), 0.75) !important; backdrop-filter: blur(5px); }
 
 .medium-zoom-image { z-index: 102; }
 
