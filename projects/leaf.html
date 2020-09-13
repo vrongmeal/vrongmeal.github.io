@@ -249,7 +249,7 @@
       
     </h1>
 
-    <blockquote>General purpose hot-reloader for all projects.</blockquote>
+    <blockquote>General purpose reloader for all projects.</blockquote>
 
 <p>Command leaf watches for changes in the working directory
 and runs the specified set of commands whenever a file
@@ -277,7 +277,7 @@ directories can be excluded.</p>
       <li><a href="#configuration-file">Configuration file</a></li>
     </ol>
   </li>
-  <li><a href="#custom-hot-reloader">Custom hot reloader</a></li>
+  <li><a href="#custom-reloader">Custom reloader</a></li>
 </ol>
       <h2 id="installation">
         
@@ -429,17 +429,17 @@ as such:</p>
   -e 'DEFAULTS' -e 'build' -e 'scripts' \
   -f '+ go.*' -f '+ *.go' -f '+ cmd/'
 </code></pre></div></div>
-      <h2 id="custom-hot-reloader">
+      <h2 id="custom-reloader">
         
         
-          Custom hot reloader <a href="#custom-hot-reloader" class="anchor-heading">#</a>
+          Custom reloader <a href="#custom-reloader" class="anchor-heading">#</a>
         
         
       </h2>
     
 
 <p>The package <a href="https://pkg.go.dev/github.com/vrongmeal/leaf">github.com/vrongmeal/leaf</a>
-comes with utilities that can aid in creating a hot-reloader
+comes with utilities that can aid in creating a reloader
 with a simple go program.</p>
 
 <p>Let’s look at an example where the watcher watches the <code class="language-plaintext highlighter-rouge">src/</code>
