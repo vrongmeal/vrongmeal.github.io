@@ -43,7 +43,7 @@ svg { fill: currentColor; }
 
 .landing-main-heading-content { width: auto; height: auto; text-align: center; }
 
-.landing-main-heading-content-title, .header-heading-title { font-size: 10rem; font-weight: bold; font-style: italic; color: var(--primary-color); }
+.landing-main-heading-content-title, .header-heading-title { font-size: 10rem; font-weight: bold; color: var(--primary-color); }
 
 @media only screen and (max-width: 720px) { .landing-main-heading-content-title, .header-heading-title { font-size: 20vw; } }
 
@@ -73,136 +73,6 @@ svg { fill: currentColor; }
 
 @media only screen and (max-width: 480px) { .landing-main-footing-icon .img { height: 1.5rem; width: 1.5rem; } }
 
-.pygments, .markdown .highlight, main .highlight { /* Name:       Base16 Paraiso Light Author:     Jan T. Sott Pygments template by Jan T. Sott (https://github.com/idleberg) Created with Base16 Builder by Chris Kempson (https://github.com/chriskempson/base16-builder) */ /* Comment */ /* Error */ /* Keyword */ /* Literal */ /* Name */ /* Operator */ /* Punctuation */ /* Comment.Multiline */ /* Comment.Preproc */ /* Comment.Single */ /* Comment.Special */ /* Generic.Deleted */ /* Generic.Emph */ /* Generic.Heading */ /* Generic.Inserted */ /* Generic.Prompt */ /* Generic.Strong */ /* Generic.Subheading */ /* Keyword.Constant */ /* Keyword.Declaration */ /* Keyword.Namespace */ /* Keyword.Pseudo */ /* Keyword.Reserved */ /* Keyword.Type */ /* Literal.Date */ /* Literal.Number */ /* Literal.String */ /* Name.Attribute */ /* Name.Builtin */ /* Name.Class */ /* Name.Constant */ /* Name.Decorator */ /* Name.Entity */ /* Name.Exception */ /* Name.Function */ /* Name.Label */ /* Name.Namespace */ /* Name.Other */ /* Name.Property */ /* Name.Tag */ /* Name.Variable */ /* Operator.Word */ /* Text.Whitespace */ /* Literal.Number.Float */ /* Literal.Number.Hex */ /* Literal.Number.Integer */ /* Literal.Number.Oct */ /* Literal.String.Backtick */ /* Literal.String.Char */ /* Literal.String.Doc */ /* Literal.String.Double */ /* Literal.String.Escape */ /* Literal.String.Heredoc */ /* Literal.String.Interpol */ /* Literal.String.Other */ /* Literal.String.Regex */ /* Literal.String.Single */ /* Literal.String.Symbol */ /* Name.Builtin.Pseudo */ /* Name.Variable.Class */ /* Name.Variable.Global */ /* Name.Variable.Instance */ /* Literal.Number.Integer.Long */ }
-
-.pygments .c, .markdown .highlight .c, main .highlight .c { color: #8d8687; }
-
-.pygments .err, .markdown .highlight .err, main .highlight .err { color: #ef6155; }
-
-.pygments .k, .markdown .highlight .k, main .highlight .k { color: #815ba4; }
-
-.pygments .l, .markdown .highlight .l, main .highlight .l { color: #f99b15; }
-
-.pygments .n, .markdown .highlight .n, main .highlight .n { color: #2f1e2e; }
-
-.pygments .o, .markdown .highlight .o, main .highlight .o { color: #5bc4bf; }
-
-.pygments .p, .markdown .highlight .p, main .highlight .p { color: #2f1e2e; }
-
-.pygments .cm, .markdown .highlight .cm, main .highlight .cm { color: #8d8687; }
-
-.pygments .cp, .markdown .highlight .cp, main .highlight .cp { color: #8d8687; }
-
-.pygments .c1, .markdown .highlight .c1, main .highlight .c1 { color: #8d8687; }
-
-.pygments .cs, .markdown .highlight .cs, main .highlight .cs { color: #8d8687; }
-
-.pygments .gd, .markdown .highlight .gd, main .highlight .gd { color: #ef6155; }
-
-.pygments .ge, .markdown .highlight .ge, main .highlight .ge { font-style: italic; }
-
-.pygments .gh, .markdown .highlight .gh, main .highlight .gh { color: #2f1e2e; font-weight: bold; }
-
-.pygments .gi, .markdown .highlight .gi, main .highlight .gi { color: #48b685; }
-
-.pygments .gp, .markdown .highlight .gp, main .highlight .gp { color: #8d8687; font-weight: bold; }
-
-.pygments .gs, .markdown .highlight .gs, main .highlight .gs { font-weight: bold; }
-
-.pygments .gu, .markdown .highlight .gu, main .highlight .gu { color: #5bc4bf; font-weight: bold; }
-
-.pygments .kc, .markdown .highlight .kc, main .highlight .kc { color: #815ba4; }
-
-.pygments .kd, .markdown .highlight .kd, main .highlight .kd { color: #815ba4; }
-
-.pygments .kn, .markdown .highlight .kn, main .highlight .kn { color: #5bc4bf; }
-
-.pygments .kp, .markdown .highlight .kp, main .highlight .kp { color: #815ba4; }
-
-.pygments .kr, .markdown .highlight .kr, main .highlight .kr { color: #815ba4; }
-
-.pygments .kt, .markdown .highlight .kt, main .highlight .kt { color: #fec418; }
-
-.pygments .ld, .markdown .highlight .ld, main .highlight .ld { color: #48b685; }
-
-.pygments .m, .markdown .highlight .m, main .highlight .m { color: #f99b15; }
-
-.pygments .s, .markdown .highlight .s, main .highlight .s { color: #48b685; }
-
-.pygments .na, .markdown .highlight .na, main .highlight .na { color: #06b6ef; }
-
-.pygments .nb, .markdown .highlight .nb, main .highlight .nb { color: #2f1e2e; }
-
-.pygments .nc, .markdown .highlight .nc, main .highlight .nc { color: #fec418; }
-
-.pygments .no, .markdown .highlight .no, main .highlight .no { color: #ef6155; }
-
-.pygments .nd, .markdown .highlight .nd, main .highlight .nd { color: #5bc4bf; }
-
-.pygments .ni, .markdown .highlight .ni, main .highlight .ni { color: #2f1e2e; }
-
-.pygments .ne, .markdown .highlight .ne, main .highlight .ne { color: #ef6155; }
-
-.pygments .nf, .markdown .highlight .nf, main .highlight .nf { color: #06b6ef; }
-
-.pygments .nl, .markdown .highlight .nl, main .highlight .nl { color: #2f1e2e; }
-
-.pygments .nn, .markdown .highlight .nn, main .highlight .nn { color: #fec418; }
-
-.pygments .nx, .markdown .highlight .nx, main .highlight .nx { color: #06b6ef; }
-
-.pygments .py, .markdown .highlight .py, main .highlight .py { color: #2f1e2e; }
-
-.pygments .nt, .markdown .highlight .nt, main .highlight .nt { color: #5bc4bf; }
-
-.pygments .nv, .markdown .highlight .nv, main .highlight .nv { color: #ef6155; }
-
-.pygments .ow, .markdown .highlight .ow, main .highlight .ow { color: #5bc4bf; }
-
-.pygments .w, .markdown .highlight .w, main .highlight .w { color: #2f1e2e; }
-
-.pygments .mf, .markdown .highlight .mf, main .highlight .mf { color: #f99b15; }
-
-.pygments .mh, .markdown .highlight .mh, main .highlight .mh { color: #f99b15; }
-
-.pygments .mi, .markdown .highlight .mi, main .highlight .mi { color: #f99b15; }
-
-.pygments .mo, .markdown .highlight .mo, main .highlight .mo { color: #f99b15; }
-
-.pygments .sb, .markdown .highlight .sb, main .highlight .sb { color: #48b685; }
-
-.pygments .sc, .markdown .highlight .sc, main .highlight .sc { color: #2f1e2e; }
-
-.pygments .sd, .markdown .highlight .sd, main .highlight .sd { color: #8d8687; }
-
-.pygments .s2, .markdown .highlight .s2, main .highlight .s2 { color: #48b685; }
-
-.pygments .se, .markdown .highlight .se, main .highlight .se { color: #f99b15; }
-
-.pygments .sh, .markdown .highlight .sh, main .highlight .sh { color: #48b685; }
-
-.pygments .si, .markdown .highlight .si, main .highlight .si { color: #f99b15; }
-
-.pygments .sx, .markdown .highlight .sx, main .highlight .sx { color: #48b685; }
-
-.pygments .sr, .markdown .highlight .sr, main .highlight .sr { color: #48b685; }
-
-.pygments .s1, .markdown .highlight .s1, main .highlight .s1 { color: #48b685; }
-
-.pygments .ss, .markdown .highlight .ss, main .highlight .ss { color: #48b685; }
-
-.pygments .bp, .markdown .highlight .bp, main .highlight .bp { color: #2f1e2e; }
-
-.pygments .vc, .markdown .highlight .vc, main .highlight .vc { color: #ef6155; }
-
-.pygments .vg, .markdown .highlight .vg, main .highlight .vg { color: #ef6155; }
-
-.pygments .vi, .markdown .highlight .vi, main .highlight .vi { color: #ef6155; }
-
-.pygments .il, .markdown .highlight .il, main .highlight .il { color: #f99b15; }
-
-@media (prefers-color-scheme: dark) { .pygments, .markdown .highlight, main .highlight { /* Name:       Base16 Paraiso Dark Author:     Jan T. Sott Pygments template by Jan T. Sott (https://github.com/idleberg) Created with Base16 Builder by Chris Kempson (https://github.com/chriskempson/base16-builder) */ /* Comment */ /* Error */ /* Keyword */ /* Literal */ /* Name */ /* Operator */ /* Punctuation */ /* Comment.Multiline */ /* Comment.Preproc */ /* Comment.Single */ /* Comment.Special */ /* Generic.Deleted */ /* Generic.Emph */ /* Generic.Heading */ /* Generic.Inserted */ /* Generic.Prompt */ /* Generic.Strong */ /* Generic.Subheading */ /* Keyword.Constant */ /* Keyword.Declaration */ /* Keyword.Namespace */ /* Keyword.Pseudo */ /* Keyword.Reserved */ /* Keyword.Type */ /* Literal.Date */ /* Literal.Number */ /* Literal.String */ /* Name.Attribute */ /* Name.Builtin */ /* Name.Class */ /* Name.Constant */ /* Name.Decorator */ /* Name.Entity */ /* Name.Exception */ /* Name.Function */ /* Name.Label */ /* Name.Namespace */ /* Name.Other */ /* Name.Property */ /* Name.Tag */ /* Name.Variable */ /* Operator.Word */ /* Text.Whitespace */ /* Literal.Number.Float */ /* Literal.Number.Hex */ /* Literal.Number.Integer */ /* Literal.Number.Oct */ /* Literal.String.Backtick */ /* Literal.String.Char */ /* Literal.String.Doc */ /* Literal.String.Double */ /* Literal.String.Escape */ /* Literal.String.Heredoc */ /* Literal.String.Interpol */ /* Literal.String.Other */ /* Literal.String.Regex */ /* Literal.String.Single */ /* Literal.String.Symbol */ /* Name.Builtin.Pseudo */ /* Name.Variable.Class */ /* Name.Variable.Global */ /* Name.Variable.Instance */ /* Literal.Number.Integer.Long */ } .pygments .c, .markdown .highlight .c, main .highlight .c { color: #776e71; } .pygments .err, .markdown .highlight .err, main .highlight .err { color: #ef6155; } .pygments .k, .markdown .highlight .k, main .highlight .k { color: #815ba4; } .pygments .l, .markdown .highlight .l, main .highlight .l { color: #f99b15; } .pygments .n, .markdown .highlight .n, main .highlight .n { color: #e7e9db; } .pygments .o, .markdown .highlight .o, main .highlight .o { color: #5bc4bf; } .pygments .p, .markdown .highlight .p, main .highlight .p { color: #e7e9db; } .pygments .cm, .markdown .highlight .cm, main .highlight .cm { color: #776e71; } .pygments .cp, .markdown .highlight .cp, main .highlight .cp { color: #776e71; } .pygments .c1, .markdown .highlight .c1, main .highlight .c1 { color: #776e71; } .pygments .cs, .markdown .highlight .cs, main .highlight .cs { color: #776e71; } .pygments .gd, .markdown .highlight .gd, main .highlight .gd { color: #ef6155; } .pygments .ge, .markdown .highlight .ge, main .highlight .ge { font-style: italic; } .pygments .gh, .markdown .highlight .gh, main .highlight .gh { color: #e7e9db; font-weight: bold; } .pygments .gi, .markdown .highlight .gi, main .highlight .gi { color: #48b685; } .pygments .gp, .markdown .highlight .gp, main .highlight .gp { color: #776e71; font-weight: bold; } .pygments .gs, .markdown .highlight .gs, main .highlight .gs { font-weight: bold; } .pygments .gu, .markdown .highlight .gu, main .highlight .gu { color: #5bc4bf; font-weight: bold; } .pygments .kc, .markdown .highlight .kc, main .highlight .kc { color: #815ba4; } .pygments .kd, .markdown .highlight .kd, main .highlight .kd { color: #815ba4; } .pygments .kn, .markdown .highlight .kn, main .highlight .kn { color: #5bc4bf; } .pygments .kp, .markdown .highlight .kp, main .highlight .kp { color: #815ba4; } .pygments .kr, .markdown .highlight .kr, main .highlight .kr { color: #815ba4; } .pygments .kt, .markdown .highlight .kt, main .highlight .kt { color: #fec418; } .pygments .ld, .markdown .highlight .ld, main .highlight .ld { color: #48b685; } .pygments .m, .markdown .highlight .m, main .highlight .m { color: #f99b15; } .pygments .s, .markdown .highlight .s, main .highlight .s { color: #48b685; } .pygments .na, .markdown .highlight .na, main .highlight .na { color: #06b6ef; } .pygments .nb, .markdown .highlight .nb, main .highlight .nb { color: #e7e9db; } .pygments .nc, .markdown .highlight .nc, main .highlight .nc { color: #fec418; } .pygments .no, .markdown .highlight .no, main .highlight .no { color: #ef6155; } .pygments .nd, .markdown .highlight .nd, main .highlight .nd { color: #5bc4bf; } .pygments .ni, .markdown .highlight .ni, main .highlight .ni { color: #e7e9db; } .pygments .ne, .markdown .highlight .ne, main .highlight .ne { color: #ef6155; } .pygments .nf, .markdown .highlight .nf, main .highlight .nf { color: #06b6ef; } .pygments .nl, .markdown .highlight .nl, main .highlight .nl { color: #e7e9db; } .pygments .nn, .markdown .highlight .nn, main .highlight .nn { color: #fec418; } .pygments .nx, .markdown .highlight .nx, main .highlight .nx { color: #06b6ef; } .pygments .py, .markdown .highlight .py, main .highlight .py { color: #e7e9db; } .pygments .nt, .markdown .highlight .nt, main .highlight .nt { color: #5bc4bf; } .pygments .nv, .markdown .highlight .nv, main .highlight .nv { color: #ef6155; } .pygments .ow, .markdown .highlight .ow, main .highlight .ow { color: #5bc4bf; } .pygments .w, .markdown .highlight .w, main .highlight .w { color: #e7e9db; } .pygments .mf, .markdown .highlight .mf, main .highlight .mf { color: #f99b15; } .pygments .mh, .markdown .highlight .mh, main .highlight .mh { color: #f99b15; } .pygments .mi, .markdown .highlight .mi, main .highlight .mi { color: #f99b15; } .pygments .mo, .markdown .highlight .mo, main .highlight .mo { color: #f99b15; } .pygments .sb, .markdown .highlight .sb, main .highlight .sb { color: #48b685; } .pygments .sc, .markdown .highlight .sc, main .highlight .sc { color: #e7e9db; } .pygments .sd, .markdown .highlight .sd, main .highlight .sd { color: #776e71; } .pygments .s2, .markdown .highlight .s2, main .highlight .s2 { color: #48b685; } .pygments .se, .markdown .highlight .se, main .highlight .se { color: #f99b15; } .pygments .sh, .markdown .highlight .sh, main .highlight .sh { color: #48b685; } .pygments .si, .markdown .highlight .si, main .highlight .si { color: #f99b15; } .pygments .sx, .markdown .highlight .sx, main .highlight .sx { color: #48b685; } .pygments .sr, .markdown .highlight .sr, main .highlight .sr { color: #48b685; } .pygments .s1, .markdown .highlight .s1, main .highlight .s1 { color: #48b685; } .pygments .ss, .markdown .highlight .ss, main .highlight .ss { color: #48b685; } .pygments .bp, .markdown .highlight .bp, main .highlight .bp { color: #e7e9db; } .pygments .vc, .markdown .highlight .vc, main .highlight .vc { color: #ef6155; } .pygments .vg, .markdown .highlight .vg, main .highlight .vg { color: #ef6155; } .pygments .vi, .markdown .highlight .vi, main .highlight .vi { color: #ef6155; } .pygments .il, .markdown .highlight .il, main .highlight .il { color: #f99b15; } }
-
 .markdown, main { line-height: 1.5; }
 
 .markdown strong, main strong { font-weight: bold; }
@@ -214,6 +84,8 @@ svg { fill: currentColor; }
 .markdown ins, main ins { text-decoration: underline; }
 
 .markdown code, main code { background-color: var(--secondary-bg-color); color: var(--primary-color); font-family: "JetBrains Mono", monospace; }
+
+.markdown pre code, main pre code { font-size: 0.85rem; }
 
 .markdown h1, main h1, .markdown h2, main h2, .markdown h3, main h3, .markdown h4, main h4, .markdown h6, main h6 { font-weight: bold; }
 
