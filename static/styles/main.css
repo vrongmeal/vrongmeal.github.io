@@ -57,7 +57,7 @@ svg { fill: currentColor; }
 
 .landing-main-footing-link { display: inline; margin-left: 1rem; }
 
-.landing-main-footing-link::before { content: "/"; text-decoration: none; margin-right: 1rem; }
+.landing-main-footing-link::before { content: "|"; text-decoration: none; margin-right: 1rem; }
 
 .landing-main-footing-link:first-child { margin-left: 0; }
 
@@ -165,11 +165,17 @@ main { width: calc(100% - 20rem); padding: 3rem 5rem; padding-left: 25rem; overf
 
 @media only screen and (max-width: 480px) { main { padding-top: 1rem; padding-bottom: 1rem; padding-left: 3.5rem; padding-right: 1rem; } }
 
-.blog-post-date { font-size: 0.8rem; color: var(--secondary-color); }
+.list-item { display: block; text-decoration: none; padding: 0.5rem 0.75rem; border: 0.1rem solid var(--secondary-bg-color); margin-bottom: 1rem; }
 
-.blog-list-date { margin-left: 0.5rem; }
+.list-item:hover { background-color: var(--secondary-bg-color); }
 
-.project-title { margin-bottom: 0.25rem; }
+.list-title { margin-bottom: 0.25rem; }
+
+.list-description { margin-bottom: 0; }
+
+.list-blog-date { margin-left: 0.5rem; }
+
+.blog-post-date { font-size: 0.8rem; color: var(--secondary-color); font-weight: normal; }
 
 .menu-btn { display: none; height: 2rem; width: 2rem; position: fixed; top: 3.5rem; left: 1.5rem; z-index: 100; cursor: pointer; color: var(--primary-color); }
 
